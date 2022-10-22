@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>login.qml</file>
+        <file>main.qml</file>
+        <file>images/setting.png</file>
+        <file>images/network.png</file>
+        <file>images/calendar.png</file>
+        <file>images/home.png</file>
+        <file>images/cropped-logo-02-1.ico</file>
+        <file>dashboard.qml</file>
+    </qresource>
+</RCC>
