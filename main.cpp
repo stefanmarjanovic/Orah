@@ -8,14 +8,14 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-    user *stefan = new user;
+    user *newUser = new user;
 
     QQmlApplicationEngine engine;
-    engine.rootContext()->setContextProperty("stefan",stefan);          // pass user object 'stefan' to QML
+    engine.rootContext()->setContextProperty("stefan",newUser);          // pass user object 'stefan' to QML
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));                // load the QML
     engine.trimComponentCache();
 
-    engine.load(QUrl(QStringLiteral("qrc:/login.qml")));                // load the QML page
+    //engine.load(QUrl(QStringLiteral("qrc:/login.qml")));                // load the QML page
     /*const QUrl url(u"qrc:/login.qml"_qs);
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {

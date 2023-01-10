@@ -8,5 +8,6 @@
         <file>images/home.png</file>
         <file>images/cropped-logo-02-1.ico</file>
         <file>dashboard.qml</file>
+        <file>images/logo-orah.png</file>
     </qresource>
 </RCC>

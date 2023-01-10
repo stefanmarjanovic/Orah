@@ -3,20 +3,35 @@ import QtQuick.Controls 2.0
 import QtQuick.Controls.Material 2.0
 import QtQuick.Layouts 1.3
 
-Window {
+Rectangle {
 
     id: dashboard
     visible: true
-    title: qsTr("Orah Electronics")
     width: 400
     height: 800
-
+    state: "Home"
 /*   StackView{
 
           anchors.fill: parent
           initialItem: login
     }
 */
+
+    //QML transitional states - toggle dashboard menu items
+    states: [
+        State {
+            name: "Home"
+        },
+        State {
+            name: "Schedule"
+        },
+        State {
+            name: "Network"
+        },
+        State {
+            name: "Settings"
+        }
+    ]
 
     RowLayout {
         id: dashBar
@@ -55,7 +70,7 @@ Window {
                         y: 0
                         width: 233
                         height: 97
-                        source: "resources/logo-white-full-e1596453620674-400x114.png"
+                        source: "images/logo-orah.png"
                         fillMode: Image.PreserveAspectFit
                     }
                 }
@@ -66,7 +81,7 @@ Window {
                     y: 141
                     width: 34
                     height: 39
-                    source: "resources/setting.png"
+                    source: "images/setting.png"
                     fillMode: Image.PreserveAspectFit
                 }
 
@@ -76,7 +91,7 @@ Window {
                     y: 141
                     width: 44
                     height: 39
-                    source: "resources/network.png"
+                    source: "images/network.png"
                     fillMode: Image.PreserveAspectFit
                 }
 
@@ -86,7 +101,7 @@ Window {
                     y: 141
                     width: 45
                     height: 39
-                    source: "resources/calendar.png"
+                    source: "images/calendar.png"
                     fillMode: Image.PreserveAspectFit
                 }
 
@@ -96,15 +111,15 @@ Window {
                     y: 141
                     width: 42
                     height: 39
-                    source: "resources/home.png"
+                    source: "images/home.png"
                     fillMode: Image.PreserveAspectFit
                     MouseArea {
                         anchors.fill: parent
-                        anchors.rightMargin: 32
+                        anchors.rightMargin: 0
                         anchors.bottomMargin: 0
-                        anchors.leftMargin: -32
+                        anchors.leftMargin: 0
                         anchors.topMargin: 0
-                        onClicked: container.clicked*(container.cellColor)
+                        onClicked: home.state = "Home"
                     }
                 }
         }

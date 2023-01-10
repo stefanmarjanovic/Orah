@@ -1,4 +1,4 @@
-import QtQuick
+ import QtQuick
 import QtQuick.Controls 2.5
 
 Window {
@@ -19,13 +19,14 @@ Window {
         font.pixelSize: 30
         horizontalAlignment: Text.AlignHCenter
         anchors.rightMargin: 74
-        anchors.leftMargin: 73
-        anchors.bottomMargin: 378
-        anchors.topMargin: 379
+        anchors.leftMargin: 74
+        anchors.bottomMargin: 407
+        anchors.topMargin: 360
         font.styleName: "Semibold"
     }
 
     //Load different QML pages chronologically
+
     Loader {
         id: mainLoader
         anchors {
@@ -33,20 +34,37 @@ Window {
             right: parent.right
             bottom: parent.bottom
         }
-        source:"login.qml"
+        focus: true
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {mainLoader.source = 'login.qml'}
     }
 
 
-    BusyIndicator {
-        id: busyIndicator
+    Text {
+        id: text1
+        x: 132
+        y: 393
+        text: qsTr("Smart Home Electronics")
+        font.pixelSize: 12
+        color: "#10624b"
+    }
+
+    Text {
+        id: text2
+        y: 764
+        text: qsTr("Powered by Orah Inc.")
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.top: parent.top
         anchors.bottom: parent.bottom
-        anchors.rightMargin: 180
-        anchors.leftMargin: 180
-        anchors.bottomMargin: 427
-        anchors.topMargin: 333
+        font.pixelSize: 12
+        horizontalAlignment: Text.AlignHCenter
+        anchors.rightMargin: 133
+        anchors.leftMargin: 146
+        anchors.bottomMargin: 21
+        color: "#10624b"
     }
 
 }

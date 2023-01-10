@@ -22,7 +22,7 @@ signals:
 
 public slots:
     bool login(QString username, QString password);
-
+    void resetPassword(QString newPassword);
 };
 
 #endif // USER_H

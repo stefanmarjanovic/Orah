@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.1, 2022-10-21T08:46:30. -->
+<!-- Written by QtCreator 8.0.2, 2022-11-10T09:12:54. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -245,9 +245,9 @@
      <value type="QString" key="identifier"></value>
      <value type="int" key="type">0</value>
     </valuemap>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Run OrahInc on Stefan’s iPhone</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.IosRunConfiguration:/Users/stefanmarjanovic/Git/OrahInc/OrahInc.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/stefanmarjanovic/Git/OrahInc/OrahInc.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Run Orah on Stefan’s iPhone</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.IosRunConfiguration:/Users/stefanmarjanovic/Git/Orah/Orah.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/stefanmarjanovic/Git/Orah/Orah.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>

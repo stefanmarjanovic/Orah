@@ -1,4 +1,4 @@
-#include "user.h"
+ #include "user.h"
 
 
 user::user(QObject *parent) : QObject(parent)
@@ -17,6 +17,15 @@ bool user::login(QString username, QString password)
         return emit success();
     }
 
-    return emit fail(); qDebug() << "Login Failed";
+    qDebug() << "Login Failed";
+    return emit fail();
+}
+
+void user::resetPassword(QString newPassword)
+{
+
+   // add validation and text formatting
+
+   this->password = newPassword;
 }
 
